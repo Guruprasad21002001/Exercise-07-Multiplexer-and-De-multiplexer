@@ -114,7 +114,7 @@ RegisterNumber:  212221240005
 verilog
 
 # 4 x 1 MULTIPLEXER: 
-
+```
 module mux(I0,I1,I2,I3,S0,S1,Y);
 input I0,I1,I2,I3,S0,S1;
 output Y;
@@ -127,14 +127,14 @@ and(R,S0,S1c,I2);
 and(S,S0,S1,I3);
 or(Y,P,Q,R,S);
 endmodule
-
+```
 
 
 
 verilog
 
 # 1 x 4 DEMULTIPLEXER:
-
+```
 module demux(Y0,Y1,Y2,Y3,S0,S1,I);
 input I,S0,S1;
 output Y0,Y1,Y2,Y3;
@@ -146,7 +146,7 @@ and(Y1,I,S0c,S1);
 and(Y2,I,S0,S1c);
 and(Y3,I,S0,S1);
 endmodule
-
+```
 
 
 ### RTL LOGIC:  
